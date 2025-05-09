@@ -4,10 +4,9 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-const [count, setCount] = useState(0);
+onst [count, setCount] = useState(0);
 
-const increment = () => setCount(count + 1);
-const decrement = () => setCount(count - 1);
+
 
 
 
@@ -15,11 +14,11 @@ const decrement = () => setCount(count - 1);
     <div className="App">
      <h1> Counter App</h1>
      
-     <p> Counter:{count} </p>
+     <p> Count: {count} </p>
 
 
-     <button onClick={increment} className='button'> Increment</button>  
-     <button onClick={decrement} className='button'> Decrement</button>
+     <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button onClick={() => setCount(count - 1)}>Decrement</button>
 
 
     </div>
