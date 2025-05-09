@@ -4,7 +4,7 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-onst [count, setCount] = useState(0);
+const [count, setCount] = useState(0);
 
 
 
